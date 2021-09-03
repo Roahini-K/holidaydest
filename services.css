@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+header .carousel-inner .carousel-item{
+    height: 100vh;
+
+}
+.navbar-inverse{
+    position: fixed;
+    height: 80px;
+    background-color: transparent;
+    border-color: transparent;
+}
+.navbar-inverse .navbar-brand{
+    color: #fff;
+    font-size: 40px;
+    padding: 40px 15px;
+    font-weight: 900;
+}
+.nav .navbar-nav .navbar-right{
+    margin-left: 200px;   
+}
+.navbar-collapse .navbar-nav{
+    padding-left: 250px;
+}
+.navbar-nav .nav-item{
+    margin-left: 20px;
+}
+.navbar-nav .nav-item button{
+  color: beige;
+padding: 9px 20px;
+background-color: rgba(0,136,169,1);
+border: none;
+border-radius: 75px;
+cursor: pointer;
+transition: all 0.3s ease 0s;
+font-weight: 500;
+font-size: 16px;
+  
+}
+.navbar-inverse .navbar-nav>li>a{
+    color: #fff;
+    text-transform: uppercase;
+}
+button{
+  color: beige;
+  padding: 9px 25px;
+  background-color: rgba(0,136,169,1);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-weight: 500;
+  font-size: 10px;
+}
+button:hover{
+  background-color: rgba(0,136,169,0.8);
+}
+section{
+    background: #007bff !important;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+    margin: 50px auto 120px !important;
+    color: #fff;
+}
+.main{
+    width: 100%;
+    min-height: 400px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+.service{
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 60px;
+    z-index: 1;
+    box-shadow: 0 0 20px -15px #030380;
+    transition: transform .8s;
+}
+.service-logo{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin: -90px auto 0;
+    background: #fff;
+    border: 18px solid #007bff;
+}
+.service-logo img{
+    width: 50px;
+    margin-top: 20px;
+    transition: transform 1s;
+}
+.service h4{
+    height: 35px;
+    width: 80%;
+    background: #fff;
+    margin: 50px auto;
+    position: relative;
+}
+.service h4::after{
+    content: '';
+    width: 40px;
+    height: 30px;
+    background: linear-gradient(to right,#fff,#007bff);
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    z-index: -1;
+}
+.service h4::before{
+    content: '';
+    width: 40px;
+    height: 30px;
+    background: linear-gradient(to right,#007bff,#fff);
+    position: absolute;
+    left: -5px;
+    bottom: -5px;
+    z-index: -1;
+}
+.main .shadowOne{
+    height: 200px;
+    width: 80%;
+    background: #fff;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    left: 10%;
+    z-index: -1;  
+    box-shadow: 0 0 20px -15px #030380;
+    transition: transform .8s;
+}
+.main .shadowTwo{
+    height: 200px;
+    width: 64%;
+    background: #fff;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    left: 18%;
+    z-index: -2;  
+}
+.main:hover .service {
+    transform: translateY(-50px);
+}
+.main:hover .shadowOne {
+    transform: translateY(-25px);
+}
+.main:hover img {
+    transform: rotate(360deg);
+}
